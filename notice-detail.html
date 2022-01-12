@@ -10,56 +10,95 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
         integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <script type="text/javascript" src="script/road-html.js" defer></script>
+    <script src="script/details.js" defer></script>
 </head>
 <body>
     <div data-include-path="header.html"></div>
     <section>
-        <div class="header">
-            <h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-            <div class="post-info">
-                <span class="post-writer">Web Admin </span>
-                <span class="post-date">2022.01.11 </span>
+        <div class="inner-cont">
+            <div class="header">
+                <span class="post-category">Programing/Website</span>
+                <h2 class="post-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <div class="post-info">
+                    <div class="post-sub-info">
+                        <span class="post-writer">Web Admin </span>
+                        <span class="post-date">2022.01.11 </span>
+                    </div>
+                    <div class="post-util-info">
+                        <button type="button" class="like-btn">
+                            <i class="far fa-heart"></i>
+                            <span class="like-num">0</span>
+                        </button>
+                        <button type="button" class="comment-btn">
+                            <i class="far fa-comment-alt"></i>
+                            <span class="like-num">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <article class="post-content">
+                <img src="img/lion.jpg" alt="lion">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros nunc, dapibus in luctus eu, suscipit eget odio.
+                Aenean molestie ligula vitae elit tristique, sed molestie nisi egestas. Nulla sapien turpis, accumsan at erat in,
+                pellentesque faucibus orci. Duis sit amet suscipit enim, eu pharetra urna. Nullam id gravida lorem. Mauris vitae ipsum
+                sapien. Etiam pretium condimentum nisl sed elementum. Maecenas eu sagittis dui. Duis semper vulputate bibendum. Aenean
+                tempus turpis in erat mollis, non tristique metus ultrices. Mauris elementum erat eu arcu suscipit semper. In vitae eros
+                dictum, pulvinar odio in, tincidunt dolor. Sed nec elit dapibus, molestie ligula vitae, consectetur leo. In hac
+                habitasse platea dictumst. Ut ornare felis eu libero semper, mollis scelerisque nisl cursus.</p>
+                <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec leo magna, ultricies non
+                ipsum vitae, pharetra condimentum eros. Curabitur aliquam accumsan condimentum. Mauris placerat facilisis ligula, at
+                volutpat massa tincidunt vel. Integer bibendum, turpis id laoreet sodales, urna lacus tincidunt eros, a laoreet nisi
+                sapien eget elit. Pellentesque velit enim, tempor vel scelerisque ut, fringilla ac urna. Proin consequat consectetur
+                erat non tempor.</p>
+                <p>Nulla hendrerit elit sed convallis luctus. Pellentesque in dolor vitae nisl laoreet rhoncus. Nullam a imperdiet justo.
+                Suspendisse ac diam lectus. In hac habitasse platea dictumst. Suspendisse consectetur risus sem. Duis et orci ac magna
+                laoreet convallis. Etiam eu nulla lacinia, ornare lectus vitae, fringilla purus. Curabitur facilisis, sapien id placerat
+                elementum, arcu felis imperdiet enim, id feugiat lectus dolor ut felis. Fusce vitae libero vel diam rhoncus maximus.
+                Duis aliquam eget sapien quis rhoncus. Vestibulum tempus, nunc in vehicula mollis, massa nisi tincidunt lectus, vitae
+                varius ante erat non ligula. Suspendisse nec nisl vitae tellus dignissim ornare. Nunc sed egestas augue. Fusce
+                consectetur purus viverra nunc suscipit euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia curae;
+            </p>
+            <p>Quisque in facilisis orci. Mauris sed elit mi. Integer tempus, purus nec condimentum imperdiet, diam odio dapibus orci,
+            ac laoreet lectus ante sit amet mi. Suspendisse lectus elit, hendrerit et libero id, volutpat lacinia sapien. Mauris
+            accumsan ornare est at mollis. Duis tincidunt tempus massa venenatis tincidunt. Nullam turpis mi, tempor eu nunc sit
+            amet, bibendum lobortis mi. In rutrum condimentum ante pulvinar sollicitudin. Fusce vehicula, nibh hendrerit
+            sollicitudin sagittis, mauris est dignissim quam, vehicula ullamcorper orci purus nec felis. Etiam tincidunt augue
+            tellus, vel interdum velit vestibulum nec. Quisque ac erat non erat aliquet vehicula. Sed maximus sem ut justo molestie
+            venenatis. In hac habitasse platea dictumst.</p>
+            </article>
+            <div class="post-footer">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-share-alt"></i>
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+    </section>
+    <div class="footer">
+        <div class="comment">
+            <div class="comment-title">
+                <span>Comment</span>
+                <span class="comment-num">0</span>
+            </div>
+            <div class="comment-content">
+                <input type="checkbox" name="secret" id="secret">
+                <label for="secret">secret</label>
+                <textarea name="comment-txt" id="comment-txt" cols="30" rows="10"></textarea>
+                <button type="button">Send</button>
+            </div>
+            <div class="comment-list"></div>
+            <div class="comment-page">
+                <i class="fas fa-chevron-left prev"></i>
+                <ul class="comment-num">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+                <i class="fas fa-chevron-right next"></i>
             </div>
         </div>
-        <article class="post-content">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eros nunc, dapibus in luctus eu, suscipit eget odio.
-            Aenean molestie ligula vitae elit tristique, sed molestie nisi egestas. Nulla sapien turpis, accumsan at erat in,
-            pellentesque faucibus orci. Duis sit amet suscipit enim, eu pharetra urna. Nullam id gravida lorem. Mauris vitae ipsum
-            sapien. Etiam pretium condimentum nisl sed elementum. Maecenas eu sagittis dui. Duis semper vulputate bibendum. Aenean
-            tempus turpis in erat mollis, non tristique metus ultrices. Mauris elementum erat eu arcu suscipit semper. In vitae eros
-            dictum, pulvinar odio in, tincidunt dolor. Sed nec elit dapibus, molestie ligula vitae, consectetur leo. In hac
-            habitasse platea dictumst. Ut ornare felis eu libero semper, mollis scelerisque nisl cursus.</p>
-            <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec leo magna, ultricies non
-            ipsum vitae, pharetra condimentum eros. Curabitur aliquam accumsan condimentum. Mauris placerat facilisis ligula, at
-            volutpat massa tincidunt vel. Integer bibendum, turpis id laoreet sodales, urna lacus tincidunt eros, a laoreet nisi
-            sapien eget elit. Pellentesque velit enim, tempor vel scelerisque ut, fringilla ac urna. Proin consequat consectetur
-            erat non tempor.</p>
-            <p>Nulla hendrerit elit sed convallis luctus. Pellentesque in dolor vitae nisl laoreet rhoncus. Nullam a imperdiet justo.
-            Suspendisse ac diam lectus. In hac habitasse platea dictumst. Suspendisse consectetur risus sem. Duis et orci ac magna
-            laoreet convallis. Etiam eu nulla lacinia, ornare lectus vitae, fringilla purus. Curabitur facilisis, sapien id placerat
-            elementum, arcu felis imperdiet enim, id feugiat lectus dolor ut felis. Fusce vitae libero vel diam rhoncus maximus.
-            Duis aliquam eget sapien quis rhoncus. Vestibulum tempus, nunc in vehicula mollis, massa nisi tincidunt lectus, vitae
-            varius ante erat non ligula. Suspendisse nec nisl vitae tellus dignissim ornare. Nunc sed egestas augue. Fusce
-            consectetur purus viverra nunc suscipit euismod. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
-            posuere cubilia curae;
-        </p>
-        <p>Quisque in facilisis orci. Mauris sed elit mi. Integer tempus, purus nec condimentum imperdiet, diam odio dapibus orci,
-        ac laoreet lectus ante sit amet mi. Suspendisse lectus elit, hendrerit et libero id, volutpat lacinia sapien. Mauris
-        accumsan ornare est at mollis. Duis tincidunt tempus massa venenatis tincidunt. Nullam turpis mi, tempor eu nunc sit
-        amet, bibendum lobortis mi. In rutrum condimentum ante pulvinar sollicitudin. Fusce vehicula, nibh hendrerit
-        sollicitudin sagittis, mauris est dignissim quam, vehicula ullamcorper orci purus nec felis. Etiam tincidunt augue
-        tellus, vel interdum velit vestibulum nec. Quisque ac erat non erat aliquet vehicula. Sed maximus sem ut justo molestie
-        venenatis. In hac habitasse platea dictumst.</p>
-        <p>Morbi pellentesque ac sem ut efficitur. Praesent at odio arcu. Nunc dictum iaculis dui eu vestibulum. Donec ipsum enim,
-        iaculis et posuere eu, iaculis eu neque. Pellentesque vel augue volutpat, tincidunt nisl sed, blandit mi. Praesent vel
-        elementum magna. Cras rhoncus, lorem ac finibus consectetur, turpis nulla sodales mauris, id commodo tortor dui et nunc.
-        Proin eu odio vitae ante tincidunt ultricies. Nunc posuere nibh non sem commodo, id condimentum nibh luctus. Praesent
-        orci ex, congue ut finibus non, fringilla in arcu. Etiam egestas iaculis urna. Nunc sed magna vel nibh lobortis
-        dignissim. Nam rutrum ipsum massa, vitae rhoncus est ullamcorper a. Nunc fermentum porta nibh euismod commodo. Integer
-        quis molestie felis.</p>
-        </article>
-        <div class="footer"></div>
-    </section>
+    </div>
     <div data-include-path="footer.html"></div>
 </body>
 </html>

@@ -1,0 +1,132 @@
+section {
+    margin-bottom: 100px;
+}
+
+section .inner-cont {
+    width: 900px;
+}
+
+.header {
+    border-bottom: solid var(--color-second) 5px;
+    padding: 20px 0;
+}
+
+.header .post-category {
+    font-weight: var(--l-font-weight);
+    color: var(--color-main);
+}
+
+.post-title {
+    margin: 0;
+    padding: 5px 0 20px 0;
+}
+
+.post-info {
+    color: var(--color-second);
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info .post-util-info button {
+    font-size: var(--m-font-size);
+    font-weight: var(--s-font-weight);
+}
+.post-info .post-util-info .like-btn i {
+    color: red;
+}
+
+.post-content div {
+    width: 100%;
+}
+.post-content p {
+    word-break: break-all;
+}
+
+.post-content img {
+    display: block;
+    width: 100%;
+}
+.post-footer {
+    text-align: right;
+}
+.post-footer i {
+    margin: 0 5px;
+    color: var(--color-second);
+}
+.footer {
+    background-color: white;
+    margin-top: 100px;
+    padding: 50px 0;
+}
+
+.comment {
+    width: 900px;
+    margin: auto;
+}
+.comment-title {
+    font-size: var(--lm-font-size);
+    font-weight: var(--l-font-weight);
+}
+
+.comment-title .comment-num {
+    color: var(--color-main);
+}
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.comment-content #secret {
+    text-align: right;
+    display: none;
+}
+.comment-content label {
+    cursor: pointer;
+}
+.comment-content label::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+    width: 18px;
+    height: 18px;
+    border: solid var(--etc-text) 1px;
+}
+
+.comment-content input[type="checkbox"]:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' focusable='false' data-prefix='fas' data-icon='check' class='svg-inline--fa fa-check fa-w-16' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Cpath fill='currentColor' d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z'%3E%3C/path%3E%3C/svg%3E");
+}
+#comment-txt {
+    width: 100%;
+    height: 100px;
+    border: solid var(--etc-text) 1px;
+    resize: none;
+    margin: 10px 0;
+}
+
+.comment button {
+    padding: 10px 50px;
+    border: solid var(--etc-text) 2px;
+    transition: all 300ms ease-in;
+}
+
+.comment button:hover {
+    background-color: var(--color-main);
+    color: white;
+}
+
+.comment-list {
+    height: 100px;
+}
+
+.comment-page {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.comment-page li,
+.comment-page i {
+    padding: 0 5px;
+}
