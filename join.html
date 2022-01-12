@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/join.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script type="text/javascript" src="script/road-html.js" defer></script>
+    <script type="text/javascript" src="script/check-form.js" defer></script>
+</head>
+<body>
+    <div data-include-path="header.html"></div
+    <div class="min-inner-cont">
+        <div class="container inner-cont">
+            <section>
+                <div class="login-header">
+                    <h1>Loggo</h1>
+                </div>
+                <form action="#" method="get" name="frm">
+                    <article>
+                        <div class="basic-info-box">
+                            <div class="user-id">
+                                <input type="text" name="id" placeholder=" " id="id">
+                                <label for="id" class="input-ph">아이디</label>
+                                <span class="confirm-msg"></span>
+                                
+                            </div>
+                            <div class="user-pass">
+                                <input type="password" name="pass" placeholder=" " id="pass">
+                                <label for="pass" class="input-ph">비밀번호</label>
+                                <span class="confirm-msg"></span>
+                            </div>
+                            <div class="user-pass-confirm">
+                                <input type="password" name="pass-cf" placeholder=" " id="pass-cf">
+                                <label for="pass-cf" class="input-ph">비밀번호 확인</label>
+                                <span class="confirm-msg"></span>
+                            </div>
+                            <div class="user-phone">
+                                <div class="phone-num">
+                                    <input type="text" name="first-num" id="first-num" placeholder=" ">
+                                    <span>-</span>
+                                    <input type="text" placeholder=" " name="second-num" id="second-num">
+                                    <span>-</span>
+                                    <input type="text" placeholder=" " name="third-num" id="third-num">
+                                    <label for="first-num" class="input-ph" >휴대폰</label>
+                                </div>
+                                <button type="button" class="confirm-num">Send Code</button>
+                            </div>
+                            <div class="user-code-confirm">
+                                <input type="text" placeholder=" " name="code-cf" id="code-cf">
+                                <label for="code-cf" class="input-ph" >인증번호</label>
+                                <button type="button" class="confirm-code">Confirm</button>
+                            </div>
+                        </div>
+                        <div class="optional-box">
+                            <h2>Optional</h2>
+                            <div class="user-name">
+                                <input type="text" placeholder=" " name="name" id="name">
+                                <label for="name" class="input-ph" >이름</label>
+                                <span class="confirm-msg"></span>
+                            </div>
+                            <div class="user-email">
+                                <input type="text" placeholder=" " name="email-first" id="email-first">
+                                <label for="email-first" class="input-ph" >이메일</label>
+                                <span>@</span>
+                                <select name="email-last" id="email-last">
+                                    <option value="">--select</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="hanmail.com">hanmail.net</option>
+                                    <option value="google.com">google.com</option>
+                                    <option value="nate.com">nate.com</option>
+                                </select>
+                            </div>
+                            <div class="user-birth">
+                                <span class="title">생년월일</span>
+                                <input type="date" name="birth" id="birth">
+                            </div>
+                            <div class="user-sex">
+                                <span class="title">성별</span>
+                                <label for="man">
+                                    남자
+                                    <input type="radio" name="sex" id="man">
+                                </label>
+                                <label for="woman">
+                                    여자
+                                    <input type="radio" name="sex" id="woman">
+                                </label>
+                            </div>
+                            <div class="user-accept">
+                                <div class="all-accept">
+                                    <input type="checkbox" name="all-check" id="all-check">
+                                    <label for="all-check">모두 동의합니다.</label>
+                                </div>
+                                <div class="accept">
+                                    <ul>
+                                        <li><input type="checkbox" name="acp01" id="acp01"><label for="acp01">본인은 만 14세 이상입니다.</label></li>
+                                        <li><input type="checkbox" name="acp02" id="acp02"><label for="acp02">이용약관에 동의합니다.</label></li>
+                                        <li><input type="checkbox" name="acp03" id="acp03"><label for="acp03">[필수] 개인정보 수집 및 이용에 동의합니다.</label></li>
+                                        <li><input type="checkbox" name="acp04" id="acp04"><label for="acp04">[선택] 개인정보 수집 및 이용에 동의합니다.</label></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="join-btn">
+                            회원가입하기
+                        </button>
+                    </article>
+                </form>
+            </section>
+        </div>
+</div>
+    <div data-include-path="footer.html"></div>
+
+</body>
+</html>
