@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/root.css">
+    <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script type="text/javascript" src="script/road-html.js" defer></script>
+</head>
+<body>
+    <div data-include-path="header.html"></div>
+    <div class="min-inner-cont">
+        <div class="container inner-cont">
+            <section>
+                <div class="login-header">
+                    <h1>Loggo</h1>
+                    <p>Sign in to Loggo</p>
+                </div>
+                <article>
+                    <div class="login-input">
+                        <div class="user-id">
+                            <input type="text" placeholder="id" name="user-id" id="id">
+                            <button type="button" class="delete"><i class="fas fa-times"></i></button>
+                        </div>
+                        <div class="user-pass">
+                            <input type="password" placeholder="password" name="user-pass" id="pass">
+                            <button type="button" class="delete"><i class="fas fa-times"></i></button>
+                        </div>
+                    </div>
+                    <div class="toggle">
+                        <input type="checkbox" name="toggle" id="toggle">
+                        <label for="toggle" class="toggle-text">Remember</label>
+                    </div>
+                    <button type="button" class="login-btn">Login</button>
+                    <div class="login-footer">
+                        <a class="join" href="join.html">Join us</a>
+                        <div class="login-forgot">
+                            <a href="#" class="id-fotgot">id /</a>
+                            <a href="#" class="pass-forgot">password forgot</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+    </div>
+    <div data-include-path="footer.html"></div>
+</body>
+</html>
