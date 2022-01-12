@@ -1,0 +1,123 @@
+.customer-menu li,
+.post-list li {
+    display: block;
+}
+
+#customer {
+    display: flex;
+}
+
+section .customer-menu {
+    width: 20%;
+    padding: 50px;
+}
+
+section .customer-title {
+    background-color: var(--dark-text);
+    text-align: center;
+    padding: 10px;
+    color: var(--light-text);
+}
+section .customer-title h1 {
+    margin: 0;
+    font-size: 1.889em;
+}
+section .customer-menu i {
+    margin-right: 10px;
+    display: none;
+    transition: all 300ms ease-in;
+}
+section .customer-menu li {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: solid var(--etc-text) 1px;
+}
+
+section .customer-menu li:hover {
+    color: var(--color-main);
+}
+
+section .customer-menu li:hover > i {
+    display: inline;
+}
+section .customer-article {
+    width: 80%;
+}
+
+section .customer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .post-search {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding: 10px;
+    /* border-radius: 10px; */
+    border-bottom: solid var(--color-third) 5px;
+}
+
+section .post-search input {
+    width: 100%;
+    padding-left: 10px;
+    font-size: var(--m-font-size);
+}
+
+section .post-search:focus {
+    border: solid var(--dark-text) 2px;
+}
+section .post-search i {
+    font-size: var(--lm-font-size);
+    color: var(--color-main);
+}
+
+section .post-list table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+section .post-list tr {
+    cursor: pointer;
+    transition: all 300ms ease-in;
+}
+
+section .post-list tr:hover {
+    color: var(--color-main);
+    background-color: var(--color-third);
+}
+section .post-list td {
+    padding: 10px;
+    border-bottom: solid var(--etc-text) 1px;
+}
+
+section .post-list .notice-title {
+    width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+section .post-list .notice-num {
+    width: 2%;
+    text-align: center;
+    font-weight: var(--l-font-weight);
+}
+
+section .post-list .notice-writer,
+section .post-list .notice-date {
+    width: 14%;
+    text-align: right;
+}
+
+section .post-page {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section .post-page li,
+section .post-page i {
+    padding: 0 5px;
+}
