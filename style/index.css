@@ -25,6 +25,10 @@
     transform: rotate(180deg);
 }
 
+.custom-shape-divider-top-1641640085 {
+    position: relative;
+}
+
 .custom-shape-divider-top-1641649531,
 .custom-shape-divider-top-1641649749 {
     position: absolute;
@@ -402,7 +406,7 @@ section .contact-icon i:hover {
 
 section .news-notice {
     background-color: var(--dark-text);
-    padding-bottom: 200px;
+    padding: 0;
 }
 
 section .news-notice .inner-cont {

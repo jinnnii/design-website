@@ -100,7 +100,7 @@ h1 {
     fill: var(--light-text);
 }
 .inner-cont {
-    width: 1080px;
+    max-width: 1080px;
     margin: auto;
 }
 
