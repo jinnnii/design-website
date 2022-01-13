@@ -7,6 +7,9 @@
     display: flex;
 }
 
+.min-inner-cont section {
+    margin-bottom: 150px;
+}
 section .customer-menu {
     width: 20%;
     padding: 50px;
